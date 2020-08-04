@@ -3,14 +3,17 @@
 # A Break Timer which is helpful for taking short breaks
 # when staring at the screen for long time
 
+# NOTE: The progress bar time may fluctuate +- 5 seconds from the given duration
+# i.e. This break timer is lenient towards the given duration
+
 from tkinter import *
 from tkinter.ttk import *
 
 # length and max of the progress bar
-breakbar_length_max = 15000
+breakbar_length_max = 1500
 
 # The time step
-sleep_time_one_second = 0.001
+sleep_time_one_second = 0.01
 
 # Start the timer
 def startBreakTimer():
@@ -21,7 +24,7 @@ def startBreakTimer():
         root.update_idletasks()
         time_remaining_str = (
             "Time Remaining:  "
-            + str(round((breakbar_length_max - i) / 1000, 1))
+            + str(round((breakbar_length_max - i) / 100, 1))
             + " seconds"
         )
         time_remain.configure(
