@@ -105,7 +105,7 @@ Just Relax and Continue :)
 """
 
 # label essentials
-label = Label(root, text=label_text, font=("Libre Baskerville", 20), justify=CENTER)
+label = Label(root, text=label_text, font=("Georgia", 20), justify=CENTER)
 label.pack(padx=10, pady=50)
 label.configure(foreground="yellow", background="#000000")
 
