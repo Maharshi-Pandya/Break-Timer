@@ -57,7 +57,7 @@ root.geometry(
 # --------------------------------------------------------------------------------
 
 # The image
-meditation_img = PhotoImage(file="meditation.gif")
+meditation_img = PhotoImage(file="./assets/meditation.gif")
 meditate_label = Label(root, image=meditation_img)
 meditate_label.pack(padx=50, pady=50)
 
