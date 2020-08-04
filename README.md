@@ -1,6 +1,7 @@
 # Break-Timer
 
 A utility like Break Timer is very essential when you are staring at the computer screen for long times!
+Default relaxation time is 15 seconds.
 
 ![The Break-Timer screenshot](./assets/ss.png)
 
